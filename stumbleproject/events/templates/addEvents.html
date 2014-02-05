@@ -1,0 +1,13 @@
+<!DOCTYPE>
+<html>
+	<head>
+	</head>
+	<body>
+		<div id=addForm>
+			<form method="POST">{% csrf_token %}
+				{{addView.as_p}}
+				<input type="submit"/>
+			</form>
+		</div>
+	</body>
+</html>
