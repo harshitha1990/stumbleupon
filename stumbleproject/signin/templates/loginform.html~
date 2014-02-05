@@ -1,0 +1,12 @@
+<!DOCTYPE>
+<html>
+	<head>
+	</head>
+	<body>
+		<div id="loginform">
+			<form metho="POST">{% csrf_token %}
+			{{ signinForm.as_p }}
+			</form>
+		</div>
+	</body>
+</html>
