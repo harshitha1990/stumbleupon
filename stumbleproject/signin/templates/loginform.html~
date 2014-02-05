@@ -6,6 +6,7 @@
 		<div id="loginform">
 			<form metho="POST">{% csrf_token %}
 			{{ signinForm.as_p }}
+			<input type="submit"/>
 			</form>
 		</div>
 	</body>

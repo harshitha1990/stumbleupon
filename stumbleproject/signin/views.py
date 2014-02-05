@@ -11,6 +11,7 @@ def signinForm(request):
 		form=AuthenticationForm(request.POST)
 		if form.is_valid:
 			formValues=request.POST.values()
+			#form=AuthenticationForm(data=request.POST)
 			user=authenticate(username=formValues[0],password=formValues[2])
 			if user is not None:
 				if user.is_active:
@@ -22,6 +23,8 @@ def signinForm(request):
 		c.update(csrf(request))
 		c['signinForm']=form
 		return render_to_response('loginform.html',c)
+
+
 		
 def test(request):
 	s=''
