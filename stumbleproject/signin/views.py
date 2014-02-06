@@ -16,7 +16,7 @@ def signinForm(request):
 			if user is not None:
 				if user.is_active:
 					login(request,user)
-				return HttpResponseRedirect('/test/')
+				return HttpResponseRedirect('/myLinks/')
 	else:
 		form=AuthenticationForm()
 		c={}

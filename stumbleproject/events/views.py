@@ -21,7 +21,7 @@ def addView(request):
 		return render_to_response("addEvents.html",c)
 		
 def myLinks(request):
-	links=Link.objects.filter(owner='harshi')
+	links=Link.objects.filter(owner=request.user.username)
 	return render_to_response("myLinksTemplate.html",{"links_list":links})
 		
 
