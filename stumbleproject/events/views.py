@@ -20,4 +20,8 @@ def addView(request):
 		c['addView']=f
 		return render_to_response("addEvents.html",c)
 		
+def myLinks(request):
+	links=Link.objects.all()
+	return render_to_response("myLinksTemplate.html",{"links_list":links})
+		
 

@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^signin/', 'signin.views.signinForm', name='signinForm'),
     url(r'^test/', 'signin.views.test', name='test'),
     url(r'^addLinks/', 'events.views.addView', name='addLinks'),
+    url(r'^myLinks/', 'events.views.myLinks', name='myLinks'),
     url(r'^admin/', include(admin.site.urls)),
 )

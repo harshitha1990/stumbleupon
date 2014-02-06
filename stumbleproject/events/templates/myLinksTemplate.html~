@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+	<head>
+	</head>
+	<body>
+		<table id="myLinksDiv" border=1>
+			<!--{% for i in links_list%}
+			<tr>
+				<td>{{ i.link}}</td>
+				<td>{{i.category}}</td>
+			</tr>
+			{% endfor %}-->
+			{{links_list.link}}
+		</div>
+	</body>
+</html>

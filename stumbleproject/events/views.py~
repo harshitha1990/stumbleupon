@@ -19,3 +19,9 @@ def addView(request):
 		c.update(csrf(request))
 		c['addView']=f
 		return render_to_response("addEvents.html",c)
+		
+def myLinks(request):
+	links=Link.objects.get(owner='harshi')
+	return render_to_response("myLinksTemplate.html",{"links_list":links})
+		
+
