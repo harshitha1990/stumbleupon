@@ -18,4 +18,4 @@ class Link(models.Model):
 #class shared(models.Model):
 #	sharedto=models.CharField(max_length=512)
 #	linkid=models.ForeignKey(Link)
-#	Date=models.DateField(auto_now_add=True)
+#	Date=models.DateField(auto_now_add=True)aa
