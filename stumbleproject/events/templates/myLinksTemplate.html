@@ -7,7 +7,7 @@
 			{% for i in links_list%}
 			<tr>
 				<td>{{ i.link}}</td>
-				<td>{{i.category}}</td>
+				<td>{{i.get_category_display}}</td>
 			</tr>
 			{% endfor %}
 		</div>
